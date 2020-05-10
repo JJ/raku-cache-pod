@@ -1,4 +1,5 @@
 use Pod::To::GenericCache;
+use nqp;
 
 unit class Pod::To::Cache; 
 

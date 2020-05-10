@@ -1,5 +1,3 @@
-use nqp;
-
 unit role Pod::To::GenericCache;
 
 has $.precomp-repo;
