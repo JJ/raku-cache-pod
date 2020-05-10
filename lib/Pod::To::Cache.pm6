@@ -3,6 +3,8 @@ use nqp;
 
 unit class Pod::To::Cache; 
 
+has $.precomp-repo;
+
 submethod BUILD(Str :$dir) {
     $!precomp-repo = CompUnit::PrecompilationRepository::Default.new(
         :store(CompUnit::PrecompilationStore::File.new(:prefix($dir.IO))),
