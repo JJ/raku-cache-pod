@@ -9,8 +9,7 @@ constant doc-dir = "t/doctest/";
 
 my $cache = Pod::To::Cache.new(:doc-dir(doc-dir), :cache-dir(cache-dir));
 
-# sub/simple
-for <simple> -> $doc-name {
+for <simple sub/simple> -> $doc-name {
     is-deeply $cache.pod(:pod-name($doc-name)), $=pod[0], "Load precompiled pod $doc-name";
     #that regex matchs a sha1 name
     my @dirs = dir( "cache/", test => /<[A..Z 0..9]> ** 5..40/);

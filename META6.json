@@ -6,6 +6,7 @@
   "license": "Artistic-2.0",
   "name": "Pod::To::Cache",
   "perl": "6.d",
+  "test-depends": ["File::Directory::Tree"],
   "provides": {
     "Pod::To::GenericCache": "lib/Pod::To::GenericCache.pm6",
     "Pod::To::Cache": "lib/Pod::To::Cache.pm6"
