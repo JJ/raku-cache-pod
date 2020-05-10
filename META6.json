@@ -1,19 +1,19 @@
 {
-  "auth" : "",
-  "authors" : [],
-  "depends" : [
-    "JSON::Fast"
-  ],
-  "description" : "",
-  "license" : "Artistic-2.0",
-  "name" : "",
-  "perl" : "6.d",
-  "provides" : { },
-  "resources" : [ ],
-  "source-url" : "",
-  "tags" : [
-    "modules"
-  ],
-    "version" : "0.0.1",
-    "meta-version": 1
+  "auth": "github:Raku",
+  "authors": ["JJ Merelo", "Antonio Gamiz"],
+  "depends": ["JSON::Fast"],
+  "description": "Precompile a collection of pod files into a cache.",
+  "license": "Artistic-2.0",
+  "name": "Pod::To::Cache",
+  "perl": "6.d",
+  "provides": {
+    "Pod::To::GenericCache": "lib/Pod::To::GenericCache.pm6",
+    "Pod::To::Cache": "lib/Pod::To::Cache.pm6"
+  },
+  "resources": [],
+  "source-url": "https://github.com/JJ/raku-cache-pod.git",
+  "source-type": "git",
+  "tags": ["modules"],
+  "version": "0.0.1",
+  "meta-version": 1
 }
